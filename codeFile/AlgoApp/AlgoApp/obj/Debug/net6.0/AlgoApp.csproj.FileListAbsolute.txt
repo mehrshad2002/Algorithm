@@ -1,0 +1,15 @@
+C:\Users\micro\source\repos\AlgoApp\AlgoApp\bin\Debug\net6.0\AlgoApp.exe
+C:\Users\micro\source\repos\AlgoApp\AlgoApp\bin\Debug\net6.0\AlgoApp.deps.json
+C:\Users\micro\source\repos\AlgoApp\AlgoApp\bin\Debug\net6.0\AlgoApp.runtimeconfig.json
+C:\Users\micro\source\repos\AlgoApp\AlgoApp\bin\Debug\net6.0\AlgoApp.dll
+C:\Users\micro\source\repos\AlgoApp\AlgoApp\bin\Debug\net6.0\AlgoApp.pdb
+C:\Users\micro\source\repos\AlgoApp\AlgoApp\obj\Debug\net6.0\AlgoApp.csproj.AssemblyReference.cache
+C:\Users\micro\source\repos\AlgoApp\AlgoApp\obj\Debug\net6.0\AlgoApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\micro\source\repos\AlgoApp\AlgoApp\obj\Debug\net6.0\AlgoApp.AssemblyInfoInputs.cache
+C:\Users\micro\source\repos\AlgoApp\AlgoApp\obj\Debug\net6.0\AlgoApp.AssemblyInfo.cs
+C:\Users\micro\source\repos\AlgoApp\AlgoApp\obj\Debug\net6.0\AlgoApp.csproj.CoreCompileInputs.cache
+C:\Users\micro\source\repos\AlgoApp\AlgoApp\obj\Debug\net6.0\AlgoApp.dll
+C:\Users\micro\source\repos\AlgoApp\AlgoApp\obj\Debug\net6.0\refint\AlgoApp.dll
+C:\Users\micro\source\repos\AlgoApp\AlgoApp\obj\Debug\net6.0\AlgoApp.pdb
+C:\Users\micro\source\repos\AlgoApp\AlgoApp\obj\Debug\net6.0\AlgoApp.genruntimeconfig.cache
+C:\Users\micro\source\repos\AlgoApp\AlgoApp\obj\Debug\net6.0\ref\AlgoApp.dll
