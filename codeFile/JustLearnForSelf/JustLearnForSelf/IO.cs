@@ -36,7 +36,7 @@ namespace JustLearnForSelf
         {
             Print("Please Enter Your Command Number! || #<Commnad>");
             Print("1-See Your Account\n2-Get Money\n3-Send Money" +
-                "\n4-Get Charge\n5-Send Charge\n6Exite");
+                "\n4-Get Charge\n5-Send Charge\n6-Exite");
             PrintAt("Enter Your Command : ");
             var CommandVal = Get();
             if( CommandVal == "6")
@@ -49,29 +49,31 @@ namespace JustLearnForSelf
                 return true;
             }
         }
-
+        // --> Command
         public void CallCommand( string val)
         {
+            string CardNumber = ReadCard();
+            Command command = new Command();
             switch (val)
             {
                 case "1":
-                    //Account;
+                    command.Account(CardNumber);
                     break;
 
                 case "2":
-                    //Get Money ;
+                    command.GetMoney(CardNumber);
                     break;
 
                 case "3":
-                    //Send Money 
+                    command.SendMoney(CardNumber);
                     break;
 
                 case "4":
-                    //Get Charge 
+                    command.GetCharge(CardNumber);
                     break;
 
                 case "5":
-                    //Send Charge
+                    command.SendCharge(CardNumber);
                     break;
 
                 default:
@@ -93,6 +95,8 @@ namespace JustLearnForSelf
             bool StartFlag;
             string CardNumberVal = card.CardNumber();
             string Card4digit = CardNumberVal.Substring(0, 4);
+
+            // --> Check.cs
             switch ( Card4digit)
             {
                 case "6104":

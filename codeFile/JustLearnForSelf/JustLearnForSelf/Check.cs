@@ -7,21 +7,40 @@
             IO io = new IO();
             string Password;
             Bank bank = new Bank();
-            string PassVal = bank.Mellat(val);
-            io.PrintAt("Enter Your Password : ");
-            Password = io.Get();
-            io.Print(PassVal);
-            io.Print(Password);
-            if( Password == PassVal)
+            string PassVal = bank.Mellat(val); //get Orginal Password from our data
+            int i = 1; // 3 attempt for user enter correct password 
+            bool Flag = true;
+            while ( i < 3)
             {
-                io.Print("Correct!");
-                return true;
+                if( i == 1 )
+                {
+                    io.Print("Welcome to the Mellat Bank.");
+
+                }
+
+                io.PrintAt("Enter Your Password : "); 
+                Password = io.Get();// get password from user 
+
+                if ( Password == PassVal)
+                {
+                    Flag = true;
+                    break;
+                }
+                else
+                {
+                    io.PrintAt($"\nYour Password Was incorect<attempt {i}");
+                    if( i == 3)
+                    {
+                        io.Print("PLESE TAKE YOUR CARD !");
+                    }
+                    io.GetAt();
+                    Flag = false;
+                }
+
+                ++i;
+
             }
-            else
-            {
-                io.Print("Nooooooo");
-                return false;
-            }
+            return Flag;
         }
         //--------------------------------
         public bool CheckPasargad( string val)

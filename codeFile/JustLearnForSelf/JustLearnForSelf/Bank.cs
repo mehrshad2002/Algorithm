@@ -6,9 +6,9 @@
         {
             IO io = new IO();
             List<UserAccount> accounts = new List<UserAccount>();
-            accounts.Add(new UserAccount("Mehrhsad", "6104123409876789", "1234"));
-            accounts.Add(new UserAccount("Aria", "6104566509875432", "1234"));
-            accounts.Add(new UserAccount("Mehrhsad", "6104209509876316", "1234"));
+            accounts.Add(new UserAccount("Mehrhsad", "6104123409876789", "1234" , "300"));
+            accounts.Add(new UserAccount("Aria", "6104566509875432", "1234", "550"));
+            accounts.Add(new UserAccount("Mehrhsad", "6104209509876316", "1234", "900"));
             bool CheckVal;
 
             //IEnumerable<string> enumerable()
@@ -40,6 +40,21 @@
                 io.Print("Card is Invalid ");
                 return "!";
             }
+        }
+
+        public string SayMoneyIran()
+        {
+            return "1";
+        }
+
+        public string SayMoneyPassargad()
+        {
+            return "1";
+        }
+
+        public string SayMoneyMelat()
+        {
+            return "1";
         }
 
         internal bool Pasargad(string val)

@@ -44,7 +44,13 @@ namespace JustLearnForSelf
             IO io = new IO();
             Card card = new Card();
             var CardNumber = io.ReadCard();
-            io.CallCheck();
+            bool FlagSatrt = io.CallCheck();
+
+            while ( FlagSatrt)
+            {
+                ATM atm = new ATM();
+                FlagSatrt = atm.Start();
+            }
 
 
         }
