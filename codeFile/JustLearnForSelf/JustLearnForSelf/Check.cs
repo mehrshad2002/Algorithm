@@ -7,7 +7,7 @@
             IO io = new IO();
             string Password;
             Bank bank = new Bank();
-            string PassVal = bank.Mellat(val); //get Orginal Password from our data
+            string PassVal = bank.MellatPassword(val); //get Orginal Password from our data
             int i = 1; // 3 attempt for user enter correct password 
             bool Flag = true;
             while ( i < 3)
@@ -43,29 +43,7 @@
             return Flag;
         }
         //--------------------------------
-        public bool CheckPasargad( string val)
-        {
-            string Password;
-            Bank bank = new Bank();
-            bool CheckVal = bank.Pasargad(val);
-            return CheckVal;
-        }
 
-        public bool CheckIran(string val)
-        {
-            string Password;
-            Bank bank = new Bank();
-            bool CheckVal = bank.Iran(val);
-            return CheckVal;
-        }
-
-        public bool CheckPassword( string val)
-        {
-            string Password;
-            IO io = new IO();
-            return true;
-
-        }
 
     }
 }

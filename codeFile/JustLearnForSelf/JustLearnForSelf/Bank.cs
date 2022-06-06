@@ -1,27 +1,16 @@
 ﻿namespace JustLearnForSelf
 {
-    internal class Bank
+    public class Bank
     {
-        public string Mellat(string val)
+        // Function For give us 
+        public string MellatPassword(string val)
         {
             IO io = new IO();
             List<UserAccount> accounts = new List<UserAccount>();
             accounts.Add(new UserAccount("Mehrhsad", "6104123409876789", "1234" , "300"));
             accounts.Add(new UserAccount("Aria", "6104566509875432", "1234", "550"));
             accounts.Add(new UserAccount("Mehrhsad", "6104209509876316", "1234", "900"));
-            bool CheckVal;
 
-            //IEnumerable<string> enumerable()
-            //{
-            //    foreach (var account in accounts)
-            //    {
-            //        if (account.NumberCard == val)
-            //        {
-            //            yield return account.Password;
-            //        }
-            //    }
-            //}
-            //var pass = enumerable();
             var passVal = "1";
             foreach( var account in accounts)
             {
@@ -42,29 +31,15 @@
             }
         }
 
-        public string SayMoneyIran()
+        public List<UserAccount> MelatData()
         {
-            return "1";
-        }
+            IO io = new IO();
+            List<UserAccount> accounts = new List<UserAccount>();
+            accounts.Add(new UserAccount("Mehrhsad", "6104123409876789", "1234", "300"));
+            accounts.Add(new UserAccount("Aria", "6104566509875432", "1234", "550"));
+            accounts.Add(new UserAccount("Mehrhsad", "6104209509876316", "1234", "900"));
 
-        public string SayMoneyPassargad()
-        {
-            return "1";
-        }
-
-        public string SayMoneyMelat()
-        {
-            return "1";
-        }
-
-        internal bool Pasargad(string val)
-        {
-            throw new NotImplementedException();
-        }
-
-        internal bool Iran(string val)
-        {
-            throw new NotImplementedException();
+            return accounts;
         }
     }
 }
